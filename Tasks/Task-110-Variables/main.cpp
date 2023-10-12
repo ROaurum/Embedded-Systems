@@ -24,22 +24,22 @@ int main()
     printf("\nTASK-110\n");
 
     // Integer
-    int count = 0;
+    int count = 10; //was originally 0
     printf("count = %d\n", count);
 
     // Add one to count
-    count = count + 1;
+    count = count + 2; //was originally +1
     printf("New value of count = %d\n", count);
 
     // Char
     char character;
-    character = 'A';
+    character = 'a'; // A asci is 65, Z is 90, 0 is 48, 9 is 57, a is 97 and z is 122 
     printf("The character %c has the ASCII code %d\n", character, character);
 
     // Short
     short shortCount = 32766;
     printf("The value of shortCount is %hd\n", shortCount);
-    shortCount = shortCount + 1;
+    shortCount = shortCount + 2;
     printf("add 1 and shortCount is %hd\n", shortCount);
 
     // Long long
@@ -48,18 +48,18 @@ int main()
     printf("A very large number in hex %llX\n", NN);
 
     // unsigned
-    unsigned short p = 1; //16 bit
-    printf("unsigned int p = %u\n", p);
+    short p = 1; //16 bit
+    printf("unsigned int p = %d\n", p);
     p = p - 2;
     printf("Subtract 2. Now unsigned int p = %u\n", p);
 
     // float 
     float pi_float = 3.1415926536;
-    printf("The value of pi is approximately %f\n", pi_float);
+    printf("The value of pi is approximately %.20f\n", pi_float);
 
     // double
-    double pi_double = 3.1415926536l;
-    printf("The value of pi is approximately %lf\n", pi_double);
+    double pi_double = 3.14159265358979323846l;
+    printf("The value of pi is approximately %.20lf\n", pi_double);
 
     // Data type sizes (in bytes)
     printf("Size of a char is %d bytes\n", sizeof(char));
@@ -69,6 +69,7 @@ int main()
     printf("Size of a long long is %d bytes\n", sizeof(long long));
     printf("Size of a float is %d bytes\n", sizeof(float));
     printf("Size of a double is %d bytes\n", sizeof(double));
+    printf("Size of a double is %d bytes\n", sizeof(unsigned short)); //newline added
 
     // Stop
     while (true);   

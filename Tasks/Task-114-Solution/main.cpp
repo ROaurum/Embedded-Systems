@@ -11,6 +11,13 @@ int main()
     //1s pause to show all LEDs are working
     wait_us(1000000);  
 
+    //start on
+    yellowLED = 1;
+    greenLED = 1;
+    redLED = 1;
+
+    wait_us(1000000);
+
     //Reset
     yellowLED = 0;
     greenLED = 0;

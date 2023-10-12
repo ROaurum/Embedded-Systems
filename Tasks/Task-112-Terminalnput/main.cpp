@@ -30,7 +30,7 @@ int main()
     printf("You entered %d correct integer values. The value was %dms\n", parsed, delay_ms);
 
     // Stop
-    while (parsed > 0) {
+    while (true) { //changed parsed > 0 to true
         wait_us(delay_ms * 1000);
         led1 = 1;
         led2 = 1;

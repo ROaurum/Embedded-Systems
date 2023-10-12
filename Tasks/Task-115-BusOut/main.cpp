@@ -17,7 +17,7 @@ int main()
     while (true)
     {
         int count = 0;
-        while (count <= 7) 
+        while (count <= 0) //changed form 7 to 0
         {
             printf("count = %d\n", count);
             lights = count;
