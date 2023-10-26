@@ -29,11 +29,11 @@ int main()
         int btnA = ButtonA;     //Local to the while-loop  
 
         //Test Button A
-        if (btnA == 1) {
-            redLED = !redLED;    //Toggle RED led
-            count = count + 1;            //Increment count
-            disp = count;       //Update display
-        }
+            if (btnA == 1) {
+                redLED = !redLED;    //Toggle RED led
+                count = count + ( (count<99) ? 1 : 0 );            
+                disp = count;       //Update display
+           }
 
         // Slow it down a bit (and debounce the switches)
         wait_us(100000);  
